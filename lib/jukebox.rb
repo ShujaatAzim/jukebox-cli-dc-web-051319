@@ -29,5 +29,8 @@ end
 
 
 def list(songs)
+  count = 1
   songs.each do |song|
-    puts
+    puts "#{count}. #{song}"
+  end
+end
