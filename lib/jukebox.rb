@@ -69,3 +69,5 @@ def run
     break
   else
     puts "Invalid command, please try again"
+  end
+end
