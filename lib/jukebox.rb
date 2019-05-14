@@ -43,7 +43,7 @@ def play(songs)
   if songs.include?(response)
     puts "Playing #{response}"
   elsif response.to_i - 1 == index
-    puts "Playing " + songs[response - 1]
+    puts "Playing " + songs[index]
   else
     puts "Invalid input, please try again"
   end
