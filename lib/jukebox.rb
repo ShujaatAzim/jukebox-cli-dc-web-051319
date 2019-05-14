@@ -35,3 +35,15 @@ def list(songs)
     count += 1
   end
 end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  response = gets.chomp
+  if songs.include?(response)
+    puts "Playing #{response}"
+  elsif response == (1..9)
+    puts "Playing " + songs[response]
+  else
+    puts "Invalid input, please try again"
+  end
+end
