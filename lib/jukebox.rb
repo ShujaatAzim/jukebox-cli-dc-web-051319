@@ -69,7 +69,6 @@ def run
     help
   elsif response == "exit"
     exit_jukebox
-    break
   else
     puts "Invalid command, please try again"
   end
