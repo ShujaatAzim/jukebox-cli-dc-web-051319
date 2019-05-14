@@ -63,16 +63,17 @@ def run
   while response != "exit"
     puts "Please enter a command"
     response = gets.chomp
-  if response == "list"
-    list(songs)
-  elsif response == "play"
-    play(song)
-  elsif response == "help"
-    help
-  elsif response == "exit"
-    exit_jukebox
-  else
-    puts "Invalid command, please try again"
+    case response
+    when "play"
+      play(song)
+    when "list"
+      list(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+    else
+      puts "Invalid command, please try again"
+    end
   end
-end
 end
