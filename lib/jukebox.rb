@@ -59,12 +59,14 @@ end
 
 def run
   help
-  puts "Please enter a command:"
-  response = gets.chomp
+  response = ""
+  while response != "exit"
+    puts "Please enter a command"
+    response = gets.chomp
   if response == "list"
-    list
+    list(songs)
   elsif response == "play"
-    play
+    play(song)
   elsif response == "help"
     help
   elsif response == "exit"
@@ -72,4 +74,5 @@ def run
   else
     puts "Invalid command, please try again"
   end
+end
 end
