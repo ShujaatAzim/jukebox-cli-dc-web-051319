@@ -32,5 +32,6 @@ def list(songs)
   count = 1
   songs.each do |song|
     puts "#{count}. #{song}"
+    count += 1
   end
 end
