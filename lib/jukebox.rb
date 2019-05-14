@@ -61,7 +61,7 @@ def run(songs)
   help
   response = ""
   while response != "exit"
-    puts "I accept the following commands:"
+    puts "Please enter a command:"
     response = gets.chomp
     case response
     when "play"
