@@ -41,7 +41,7 @@ def play(songs)
   response = gets.chomp
   if songs.include?(response)
     puts "Playing #{response}"
-  elsif response == (1..9)
+  elsif response.between?(1,9)
     puts "Playing " + "#{songs[response - 1]}"
   else
     puts "Invalid input, please try again"
