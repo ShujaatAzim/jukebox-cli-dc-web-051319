@@ -42,10 +42,13 @@ def play(songs)
   songs.each_with_index do |song, index|
     if songs.include?(response)
       puts "Playing #{response}"
+      break
     elsif response.to_i - 1 == index
       puts "Playing " + songs[index]
+      break
     else
       puts "Invalid input, please try again"
+      break
     end
   end
 end
