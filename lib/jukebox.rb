@@ -53,3 +53,19 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  help
+  puts "Please enter a command:"
+  response = gets.chomp
+  if response == "list"
+    list
+  elsif response == "play"
+    play
+  elsif response == "help"
+    help
+  elsif response == "exit"
+    exit_jukebox
+    break
+  else
+    puts "Invalid command, please try again"
